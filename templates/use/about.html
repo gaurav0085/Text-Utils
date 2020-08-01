@@ -12,7 +12,7 @@
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">TextUtils.in</a>
+  <a class="navbar-brand" href="#">TextUtils.in</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -22,10 +22,10 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/use/about">About Us</a>
+        <a class="nav-link" href="">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/use/contact">Contact Us</a>
+        <a class="nav-link" href="#">Contact Us</a>
       </li>
 
     </ul>
@@ -34,9 +34,7 @@
 
 
 <div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Welcome to TextUtils!</strong> You can modify your text here
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">×</span>
+  <strong>About TextUtils.in</strong>
   </button>
 </div>
 
@@ -44,38 +42,26 @@
 <div class="container">
 
   <form action='/analyze' method='post'>{% csrf_token %} <!csrf_token for the safety of website>
-
-
-
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Enter your text here </label>
-    <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="9"></textarea>
+  <div class="card text-center">
+  <div class="card-header">
   </div>
-
-<div class="custom-control custom-switch">
-  <input type="checkbox" name="removepunc" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>
+  <div class="card-body">
+    <h4 class="card-title" align="left" >Text Utils</h4>
+    <p class="card-text"  align="left">Our website provides free service to the users to do the basic modification nd analysis of the text .<br />
+It provides assistance to the users for performing various tasks such as -
+      <ul align="left">
+      <li>Remove Punctuations</li><br />
+    <li>UPPERCASE</li><br />
+    <li>New Line Remover</li><br />
+     <li>Extra Spaces Remover</li><br />
+</ul>
+<p align="left">User has to just enter the text in the editor and select the options, Rest everything Text-Utils will do for you.
+</p>
+</p>
+  </div>
 </div>
-
-  <div class="custom-control custom-switch">
-  <input type="checkbox" name="fullcaps" class="custom-control-input" id="customSwitch2">
-  <label class="custom-control-label" for="customSwitch2">UPPERCASE</label>
+  </form>
 </div>
-
-  <div class="custom-control custom-switch">
-  <input type="checkbox"  name="newlineremover" class="custom-control-input" id="customSwitch3">
-  <label class="custom-control-label" for="customSwitch3">New Line Remover</label>
-</div>
-
-  <div class="custom-control custom-switch">
-  <input type="checkbox"  name="extraspaceremover" class="custom-control-input" id="customSwitch4">
-  <label class="custom-control-label" for="customSwitch4">Extra Spaces Remover</label>
-</div>
-
-<button type="submit" class="btn btn-dark mt-2">Analyze Text</button>
-    </form>
-</div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

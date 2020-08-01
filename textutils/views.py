@@ -6,6 +6,14 @@ def index(request):
     return render(request, 'index.html')
 
 
+def about(request):
+    return render(request, 'use/about.html')
+
+
+def contact(request):
+    return render(request, 'use/contact.html')
+
+
 def analyze(request):
     #Get the text
     djtext = request.POST.get('text', 'default')
